@@ -1,0 +1,19 @@
+{
+  "name": "bucket-buddy",
+  "version": "0.0.1",
+  "description": "Simple bucket list application",
+  "dependencies": {
+    "bcryptjs": "^2.3.0",
+    "body-parser": "^1.14.1",
+    "bower": "^1.7.1",
+    "express": "^4.10.2",
+    "jsonwebtoken": "^5.4.1",
+    "lodash": "^3.10.1",
+    "mongoose": "^4.2.4",
+    "mongoose-deep-populate": "^2.0.3"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "postinstall": "bower install"
+  }
+}

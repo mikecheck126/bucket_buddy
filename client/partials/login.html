@@ -1,0 +1,47 @@
+<br>
+<div class="row">
+	<div class="col m6">
+		<h4>Register</h4>
+		<form>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="username" type="text" ng-model="new_user.username" class="validate" minlength="2">
+          <label for="username">Username</label>
+        </div>
+        <div class="input-field col s12">
+          <input id="email" type="email" ng-model="new_user.email" class="validate" minlength="5">
+          <label for="email">Email</label>
+        </div>
+        <div class="input-field col s12">
+          <input id="password" type="password" ng-model="new_user.password" class="validate" minlength="8">
+          <label for="password">Password</label>
+        </div>
+        <div class="input-field col s12">
+          <input id="confirm_password" type="password" ng-model="new_user.confirm_password" class="validate" minlength="8">
+          <label for="confirm_password">Confirm Password</label>
+        </div>
+      </div>
+      <div class="input-field right">
+				<button ng-click='register()' class="btn">Register</button>
+			</div>
+		</form>
+	</div>
+	<div class="col m6">
+		<h4>Login</h4>
+		<form>
+			<div class="row">
+				<div class="input-field col s12">
+					<input id="login_email" type="email" ng-model='user.email' class="validate">
+	        <label for="login_email">Email</label>
+				</div>
+        <div class="input-field col s12">
+          <input id="login_password" type="password" ng-model="user.password" class="validate">
+          <label for="login_password">Password</label>
+        </div>
+      </div>
+			<div class="input-field right">
+				<button ng-click='login()' class="btn">Login</button>
+			</div>
+		</form>
+	</div>
+</div>

@@ -1,0 +1,8 @@
+[type="checkbox"].filled-in:checked+label:after, .btn, .chip {
+	border: #6B5E62;
+	background-color: #6B5E62;
+}
+
+.chip {
+	color: white;
+}

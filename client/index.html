@@ -1,0 +1,31 @@
+<html ng-app='bucket-list'>
+<head>
+  <link href="bower_components/Materialize/dist/css/materialize.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="static/style.css">
+</head>
+<body>
+  <div ui-view="header"></div>
+	<div class="container">
+		<div ui-view="content"></div>
+	</div>
+
+  <!-- External scripts -->
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src='bower_components/Materialize/dist/js/materialize.js'/></script>
+  <script src='bower_components/angular/angular.js'/></script>
+  <script src='bower_components/angular-ui-router/release/angular-ui-router.js'/></script>
+  <script src='bower_components/angular-ui-router.stateHelper/statehelper.js'/></script>
+  <script src='bower_components/a0-angular-storage/dist/angular-storage.js'/></script>
+  <script src='bower_components/angular-jwt/dist/angular-jwt.js'/></script>
+
+  <!-- Internal Scripts -->
+  <script src="scripts/app.js"></script>
+  <script src="scripts/controllers/login.js"></script>
+  <script src="scripts/controllers/navbar.js"></script>
+  <script src="scripts/controllers/dashboard.js"></script>
+  <script src="scripts/controllers/user.js"></script>
+  <script src="scripts/factories/item.js"></script>
+  <script src="scripts/factories/user.js"></script>
+</body>
+</html>
